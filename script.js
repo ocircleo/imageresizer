@@ -15,8 +15,9 @@ function valueUpdate(n) {
   value.innerText = n + "%";
 }
 copyEmail.addEventListener("click", (e) => {
-  let text = 'salmanhossain11222626@gmail.com'
- navigator.clipboard.writeText(text).then(()=> alert(text))
+  let text = "salmanhossain11222626@gmail.com";
+  copyEmail.innerText = 'copied'
+  navigator.clipboard.writeText(text);
   setTimeout(() => {
     copyEmail.innerText = "copy email";
   }, 3000);
